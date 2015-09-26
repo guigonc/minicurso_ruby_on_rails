@@ -15,8 +15,6 @@ class Colecao
     @usuarios.map do |usuario|
       lambda.call(usuario)
     end
-
-    "Map"
   end
 end
 
@@ -34,12 +32,5 @@ proc = lambda { |u|
 }
 
 p c.map(proc)
-
-
-# arr_email = arr.map do |usuario|
-#   usuario.email
-# end
-
-# p arr_email
 
 
